@@ -1,0 +1,106 @@
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\obj\Debug\IMDb Applicatie.csprojResolveAssemblyReference.cache
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\IMDb Applicatie.dll.config
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\IMDb Applicatie.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\IMDb Applicatie.pdb
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Antlr3.Runtime.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.SqlServer.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Newtonsoft.Json.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Owin.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Optimization.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Providers.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\WebGrease.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Optimization.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Antlr3.Runtime.pdb
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Newtonsoft.Json.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.SqlServer.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Providers.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\obj\Debug\IMDb Applicatie.dll
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\obj\Debug\IMDb Applicatie.pdb
+C:\Users\Max\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Oracle.DataAccess.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\IMDb Applicatie.dll.config
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\IMDb Applicatie.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\IMDb Applicatie.pdb
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Antlr3.Runtime.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.SqlServer.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Newtonsoft.Json.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Oracle.DataAccess.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Owin.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Optimization.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Providers.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\WebGrease.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Optimization.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Antlr3.Runtime.pdb
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Newtonsoft.Json.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\EntityFramework.SqlServer.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\System.Web.Providers.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\obj\Debug\IMDb Applicatie.csprojResolveAssemblyReference.cache
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\obj\Debug\IMDb Applicatie.dll
+C:\Users\Gebruiker\Dropbox\Stan-Max\SE2\MAX\IMDb Applicatie\IMDb Applicatie\obj\Debug\IMDb Applicatie.pdb
