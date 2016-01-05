@@ -6819,3 +6819,7 @@ td.visible-print {
 {
     resize: none;
 }
+
+ .AllignLeft {
+     text-align: left;
+ }

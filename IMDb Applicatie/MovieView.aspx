@@ -8,9 +8,9 @@
             <div class="col-md-8">
                 <div class="form-group">
                     <div class="col-md-10">
-                        <asp:Button ID="btnLogOut" runat="server" Text="Uitloggen" OnClick="btnLogOut_OnClick" />
                         <asp:DropDownList ID="ddlMovies"
                             AutoPostBack="True"
+                            CssClass="form-control"
                             OnSelectedIndexChanged="ddlMovies_Selection_Change"
                             runat="server">
                         </asp:DropDownList>
@@ -53,6 +53,7 @@
             </div>
             <div class="form-group">
                 <div class="col-md-10">
+                    <asp:Label ID="lblRegisseur" runat="server" CssClass="textbox">Regisseur:</asp:Label>
                     <asp:TextBox runat="server" ID="tbRegisseur" CssClass="form-control textbox-register" TextMode="SingleLine" ToolTip="De regisseur van de film" EnableViewState="False" ReadOnly="True" />
                 </div>
             </div>
@@ -60,13 +61,7 @@
                 <div class="col-md-10">
                     <asp:Label ID="lblCast" runat="server" Text="Cast:"></asp:Label>
                     <br />
-                    <asp:ListBox ID="lbCast" SelectionMode="Single" CssClass="form-group" ToolTip="De cast van de film." EnableViewState="False" runat="server">
-                        <asp:ListItem>Item 1</asp:ListItem>
-                        <asp:ListItem>Item 2</asp:ListItem>
-                        <asp:ListItem>Item 3</asp:ListItem>
-                        <asp:ListItem>Item 4</asp:ListItem>
-                        <asp:ListItem>Item 5</asp:ListItem>
-                        <asp:ListItem>Item 6</asp:ListItem>
+                    <asp:ListBox ID="lbCast" SelectionMode="Single" CssClass="form-control" ToolTip="De cast van de film." EnableViewState="False" runat="server">
                     </asp:ListBox>
                 </div>
             </div>
@@ -74,13 +69,7 @@
                 <div class="col-md-10">
                     <asp:Label ID="lblPrijzen" runat="server" Text="Prijzen:"></asp:Label>
                     <br />
-                    <asp:ListBox ID="lbPrizes" SelectionMode="Single" CssClass="form-group" ToolTip="De prijzen van de film." EnableViewState="False" runat="server">
-                        <asp:ListItem>Item 1</asp:ListItem>
-                        <asp:ListItem>Item 2</asp:ListItem>
-                        <asp:ListItem>Item 3</asp:ListItem>
-                        <asp:ListItem>Item 4</asp:ListItem>
-                        <asp:ListItem>Item 5</asp:ListItem>
-                        <asp:ListItem>Item 6</asp:ListItem>
+                    <asp:ListBox ID="lbPrizes" SelectionMode="Single" CssClass="form-control" ToolTip="De prijzen van de film." EnableViewState="False" runat="server">
                     </asp:ListBox>
                 </div>
             </div>
@@ -88,17 +77,10 @@
                 <div class="col-md-10">
                     <asp:Label ID="lblRecensies" runat="server" Text="Recensies:"></asp:Label>
                     <br />
-                    <asp:ListBox ID="lbRecensies" SelectionMode="Single" CssClass="form-group" ToolTip="De prijzen van de film." EnableViewState="False" runat="server">
-                        <asp:ListItem>Item 1</asp:ListItem>
-                        <asp:ListItem>Item 2</asp:ListItem>
-                        <asp:ListItem>Item 3</asp:ListItem>
-                        <asp:ListItem>Item 4</asp:ListItem>
-                        <asp:ListItem>Item 5</asp:ListItem>
-                        <asp:ListItem>Item 6</asp:ListItem>
+                    <asp:ListBox ID="lbRecensies" SelectionMode="Single" CssClass="form-control" ToolTip="De prijzen van de film." EnableViewState="False" runat="server">
                     </asp:ListBox>
                 </div>
             </div>
-
         </div>
     </div>
 </asp:Content>

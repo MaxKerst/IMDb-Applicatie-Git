@@ -3,6 +3,8 @@ using System.Web.UI;
 using System.Data.SqlClient;
 using System.Web;
 using System.Web.Security;
+using Microsoft.AspNet.Identity;
+using Newtonsoft.Json;
 using Oracle.DataAccess.Client;
 using Oracle.DataAccess.Types;
 
@@ -25,6 +27,7 @@ namespace IMDb_Applicatie.Account
         {
             if (Portal.ValidateUser(tbEmail.Text, tbPassword.Text))
             {
+                //Context.User.Identity.GetUserName();
                 FormsAuthenticationTicket tkt;
                 string cookiestr;
                 HttpCookie ck;

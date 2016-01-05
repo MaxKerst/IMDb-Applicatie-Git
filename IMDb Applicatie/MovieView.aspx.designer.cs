@@ -13,15 +13,6 @@ namespace IMDb_Applicatie {
     public partial class MovieView {
         
         /// <summary>
-        /// btnLogOut control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogOut;
-        
-        /// <summary>
         /// ddlMovies control.
         /// </summary>
         /// <remarks>
@@ -101,6 +92,15 @@ namespace IMDb_Applicatie {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbRating;
+        
+        /// <summary>
+        /// lblRegisseur control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRegisseur;
         
         /// <summary>
         /// tbRegisseur control.

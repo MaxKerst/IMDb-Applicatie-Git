@@ -9,11 +9,13 @@ namespace IMDb_Applicatie
     {
         public string Titel;
         public int Jaar;
+        public int Id;
 
-        public Prijs(string titel, int jaar)
+        public Prijs(string titel, int jaar, int id)
         {
             Titel = titel;
             Jaar = jaar;
+            Id = id;
         }
     }
 }

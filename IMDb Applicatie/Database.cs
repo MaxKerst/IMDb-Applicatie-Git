@@ -96,9 +96,9 @@ namespace IMDb_Applicatie
             string beschrijving = string.Empty;
             Regisseur filmRegisseur = new Regisseur("test");
             string genre = String.Empty;
-            List<Prijs> filmPrijs;
-            List<Recensie> filmRecensies;
-            List<Acteur> cast;
+            List<Prijs> filmPrijs = new List<Prijs>();
+            List<Recensie> filmRecensies = new List<Recensie>();
+            List<Acteur> cast = new List<Acteur>();
             double filmRating = 0;
 
             using (connection = new OracleConnection(connectionstring))
@@ -157,7 +157,115 @@ namespace IMDb_Applicatie
                     reader.Close();
                 }
             }
-            _film = new Film(titel, beschrijving, filmRegisseur, genre, filmRating);
+
+            using (connection = new OracleConnection(connectionstring))
+            {
+                //string titel, string beschrijving, Regisseur filmRegisseur, string genre, List<Prijs> filmPrijs,
+                //List<Recensie> filmRecensies, List<Acteur> cast, double filmRating
+                query = "SELECT a.naam, a.acteurid FROM acteur a, filmacteurregel facr, film f WHERE a.acteurid = facr.acteurid AND facr.filmid = f.filmid AND f.filmid = :pid";
+                cmd.CommandText = query;
+                cmd.Connection = connection;
+
+                try
+                {
+                    connection.Open();
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.Add("id", Convert.ToInt32(id));
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cast.Add(new Acteur(reader.GetString(0), reader.GetInt32(1)));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    cmd.Dispose();
+                    connection.Dispose();
+                    reader.Close();
+                }
+            }
+            using (connection = new OracleConnection(connectionstring))
+            {
+                //string titel, string beschrijving, Regisseur filmRegisseur, string genre, List<Prijs> filmPrijs,
+                //List<Recensie> filmRecensies, List<Acteur> cast, double filmRating
+                query = "SELECT p.titel, p.jaar, p.prizeid FROM prijs p, filmprijsregel fpr, film f WHERE p.prizeid = fpr.prizeid AND fpr.filmid = f.filmid AND f.filmid = :pid";
+                cmd.CommandText = query;
+                cmd.Connection = connection;
+
+                try
+                {
+                    connection.Open();
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.Add("id", Convert.ToInt32(id));
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        filmPrijs.Add(new Prijs(reader.GetString(0), reader.GetInt32(1), reader.GetInt32(2)));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    cmd.Dispose();
+                    connection.Dispose();
+                    reader.Close();
+                }
+            }
+            using (connection = new OracleConnection(connectionstring))
+            {
+                //string titel, string beschrijving, Regisseur filmRegisseur, string genre, List<Prijs> filmPrijs,
+                //List<Recensie> filmRecensies, List<Acteur> cast, double filmRating
+                query = "SELECT g.gebruikersnaam, g.userid, r.reviewid, r.rbody FROM recensie r, gebruiker g, film f WHERE r.userid = g.userid AND f.filmid = :pid";
+                cmd.CommandText = query;
+                cmd.Connection = connection;
+
+                try
+                {
+                    connection.Open();
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.Add("id", Convert.ToInt32(id));
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        filmRecensies.Add(new Recensie(new Gebruiker(reader.GetString(0), reader.GetInt32(1)), Convert.ToInt32(id),
+                            reader.GetString(3), reader.GetInt32(2)));
+
+                        ;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    cmd.Dispose();
+                    connection.Dispose();
+                    reader.Close();
+                }
+            }
+            using (connection = new OracleConnection(connectionstring))
+            {
+                //string titel, string beschrijving, Regisseur filmRegisseur, string genre, List<Prijs> filmPrijs,
+                //List<Recensie> filmRecensies, List<Acteur> cast, double filmRating
+                query = "SELECT p.titel, p.jaar, p.prizeid FROM prijs p, filmprijsregel fpr, film f WHERE p.prizeid = fpr.prizeid AND fpr.filmid = f.filmid AND f.filmid = :pid";
+                cmd.CommandText = query;
+                cmd.Connection = connection;
+
+                try
+                {
+                    connection.Open();
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.Add("id", Convert.ToInt32(id));
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        filmPrijs.Add(new Prijs(reader.GetString(0), reader.GetInt32(1), reader.GetInt32(2)));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    cmd.Dispose();
+                    connection.Dispose();
+                    reader.Close();
+                }
+            }
+            _film = new Film(titel, beschrijving, filmRegisseur, genre, filmPrijs, filmRecensies, cast, filmRating);
             return _film;
         }
     }

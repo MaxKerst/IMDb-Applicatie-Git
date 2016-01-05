@@ -17,6 +17,7 @@ namespace IMDb_Applicatie
             {
                 ChangeVisibility(false);
                 ddlMovies.Items.Clear();
+                ddlMovies.Items.Add("Selecteer een film");
                 List<Film> films = Portal.ObtainFilms();
                 foreach (Film f in films)
                 {
@@ -24,19 +25,39 @@ namespace IMDb_Applicatie
                     ddlMovies.Items.Add(_listItem);
                 }
             }
-            
-            btnLogOut.Text = Context.User.Identity.GetUserName();
         }
 
         public void ddlMovies_Selection_Change(object sender, EventArgs e)
         {
-            ChangeVisibility(true);
-            Film _selectedFilm = Portal.ObtainFilm(ddlMovies.SelectedValue);
-            tbMovieName.Text = _selectedFilm.Titel;
-            tbDescription.Text = _selectedFilm.Beschrijving;
-            tbGenre.Text = _selectedFilm.Genre;
-            tbRating.Text = _selectedFilm.FilmRating.ToString();
-            tbRegisseur.Text = _selectedFilm.FilmRegisseur.Naam;
+            if (ddlMovies.SelectedValue != "Selecteer een film")
+            {
+                ChangeVisibility(true);
+                Film _selectedFilm = Portal.ObtainFilm(ddlMovies.SelectedValue);
+                tbMovieName.Text = _selectedFilm.Titel;
+                tbDescription.Text = _selectedFilm.Beschrijving;
+                tbGenre.Text = _selectedFilm.Genre;
+                tbRating.Text = _selectedFilm.FilmRating.ToString();
+                tbRegisseur.Text = _selectedFilm.FilmRegisseur.Naam;
+
+                lbCast.Items.Clear();
+                foreach (Acteur a in _selectedFilm.Cast)
+                {
+                    lbCast.Items.Add(new ListItem(a.Naam, a.Id.ToString()));
+                }
+
+                lbPrizes.Items.Clear();
+                foreach (Prijs p in _selectedFilm.FilmPrijs)
+                {
+                    lbPrizes.Items.Add(new ListItem(p.Titel + " - " + p.Jaar.ToString(), p.Id.ToString()));
+                }
+
+                lbRecensies.Items.Clear();
+                foreach (Recensie r in _selectedFilm.FilmRecensies)
+                {
+                    lbRecensies.Items.Add(new ListItem(r.Body + " - " + r.Plaatser.Gebruikersnaam, r.Id.ToString()));
+                }
+            }
+
         }
 
         public void ChangeVisibility(bool truefalse)
@@ -57,6 +78,7 @@ namespace IMDb_Applicatie
             lblRating.Visible = truefalse;
             lblRecensies.Visible = truefalse;
             tbRegisseur.Visible = truefalse;
+            lblRegisseur.Visible = truefalse;
         }
 
         protected void btnLogOut_OnClick(object sender, EventArgs e)
