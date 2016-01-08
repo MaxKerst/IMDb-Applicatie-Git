@@ -34,7 +34,7 @@
         <asp:Label ID="lblError" runat="server" Text="Er is een error opgetreden tijdens het maken van de account, probeer het opnieuw." CssClass="text-danger" Visible="False"></asp:Label>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" Text="Registreren" CssClass="btn btn-default" onclick="RegisterButton_Click"/>
+                <asp:Button runat="server" Text="Registreren" CssClass="btn btn-primary" onclick="RegisterButton_Click"/>
             </div>
         </div>
     </div>

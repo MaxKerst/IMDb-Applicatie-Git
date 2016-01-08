@@ -6824,6 +6824,10 @@ td.visible-print {
      text-align: left;
  }
 
+  .AllignRight {
+     text-align: right;
+ }
+
  .form-control[readonly] {
      background-color: white;
      cursor: default;

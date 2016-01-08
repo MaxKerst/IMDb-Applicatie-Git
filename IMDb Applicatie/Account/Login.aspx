@@ -8,26 +8,24 @@
                 <div class="form-horizontal">
                     <hr />
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="tbName" CssClass="col-md-2 control-label">Gebruikersnaam</asp:Label>
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="tbName" CssClass="form-control textbox" TextMode="SingleLine" />
+                            <asp:TextBox runat="server" ID="tbName" Placeholder="Gebruikersnaam" CssClass="form-control textbox" TextMode="SingleLine" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="tbName"
-                                CssClass="text-danger" ErrorMessage="Het email veld moet worden ingevuld." Display="Dynamic" />
+                                CssClass="text-danger" ErrorMessage="Gebruikersnaam moet worden ingevuld." Display="Dynamic" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="tbPassword" CssClass="col-md-2 control-label">Wachtwoord</asp:Label>
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="tbPassword" TextMode="Password" CssClass="form-control textbox" />
+                            <asp:TextBox runat="server" ID="tbPassword" Placeholder="Wachtwoord" TextMode="Password" CssClass="form-control textbox" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="tbPassword" CssClass="text-danger" ErrorMessage="Het wachtwoord
-                                 veld moet worden ingevuld."
+                                 moet worden ingevuld."
                                 Display="Dynamic" />
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Inloggen" CssClass="btn btn-default" />
+                        <div class="col-md-10">
+                            <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Inloggen" CssClass="btn btn-primary" />
                         </div>
                     </div>
                 </div>

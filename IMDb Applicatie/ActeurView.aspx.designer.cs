@@ -22,15 +22,6 @@ namespace IMDb_Applicatie {
         protected global::System.Web.UI.WebControls.DropDownList ddlActeurs;
         
         /// <summary>
-        /// lblName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
-        
-        /// <summary>
         /// lblGeboortedatum control.
         /// </summary>
         /// <remarks>

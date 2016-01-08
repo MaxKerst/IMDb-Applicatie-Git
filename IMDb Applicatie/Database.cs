@@ -360,7 +360,7 @@ namespace IMDb_Applicatie
 
             using (connection = new OracleConnection(connectionstring))
             {
-                query = "SELECT f.filmid, f.titel FROM film f, regisseur r WHERE r.regisseurid = :pid";
+                query = "SELECT f.filmid, f.titel FROM film f, regisseur r WHERE r.regisseurid = :pid AND f.regisseurid = :pid";
                 cmd.CommandText = query;
                 cmd.Connection = connection;
 
