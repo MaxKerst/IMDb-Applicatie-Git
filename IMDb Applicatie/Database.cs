@@ -160,7 +160,7 @@ namespace IMDb_Applicatie
             {
                 //string titel, string beschrijving, Regisseur filmRegisseur, string genre, List<Prijs> filmPrijs,
                 //List<Recensie> filmRecensies, List<Acteur> cast, double filmRating
-                query = "SELECT a.naam, a.acteurid FROM acteur a, filmacteurregel facr, film f WHERE a.acteurid = facr.acteurid AND facr.filmid = f.filmid AND f.filmid = :pid";
+                query = "SELECT a.naam, a.acteurid FROM acteur a, filmacteurregel facr, film f WHERE a.acteurid = facr.acteurid AND facr.filmid = :pid AND f.filmid = :pid";
                 cmd.CommandText = query;
                 cmd.Connection = connection;
 
@@ -186,7 +186,7 @@ namespace IMDb_Applicatie
             {
                 //string titel, string beschrijving, Regisseur filmRegisseur, string genre, List<Prijs> filmPrijs,
                 //List<Recensie> filmRecensies, List<Acteur> cast, double filmRating
-                query = "SELECT p.titel, p.jaar, p.prizeid FROM prijs p, filmprijsregel fpr, film f WHERE p.prizeid = fpr.prizeid AND fpr.filmid = f.filmid AND f.filmid = :pid";
+                query = "SELECT p.titel, p.jaar, p.prizeid FROM prijs p, filmprijsregel fpr, film f WHERE p.prizeid = fpr.prizeid AND fpr.filmid = :pid AND f.filmid = :pid";
                 cmd.CommandText = query;
                 cmd.Connection = connection;
 
@@ -228,32 +228,6 @@ namespace IMDb_Applicatie
                             reader.GetString(3), reader.GetInt32(2)));
 
                         ;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    cmd.Dispose();
-                    connection.Dispose();
-                    reader.Close();
-                }
-            }
-            using (connection = new OracleConnection(connectionstring))
-            {
-                //string titel, string beschrijving, Regisseur filmRegisseur, string genre, List<Prijs> filmPrijs,
-                //List<Recensie> filmRecensies, List<Acteur> cast, double filmRating
-                query = "SELECT p.titel, p.jaar, p.prizeid FROM prijs p, filmprijsregel fpr, film f WHERE p.prizeid = fpr.prizeid AND fpr.filmid = f.filmid AND f.filmid = :pid";
-                cmd.CommandText = query;
-                cmd.Connection = connection;
-
-                try
-                {
-                    connection.Open();
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.Add("id", Convert.ToInt32(id));
-                    reader = cmd.ExecuteReader();
-                    while (reader.Read())
-                    {
-                        filmPrijs.Add(new Prijs(reader.GetString(0), reader.GetInt32(1), reader.GetInt32(2)));
                     }
                 }
                 catch (Exception ex)
@@ -335,7 +309,7 @@ namespace IMDb_Applicatie
 
             using (connection = new OracleConnection(connectionstring))
             {
-                query = "SELECT p.titel, p.jaar, p.prizeid FROM prijs p, regisseurprijsregel rpr, regisseur r WHERE p.prizeid = rpr.prizeid AND rpr.regisseurid = :pid";
+                query = "SELECT p.titel, p.jaar, p.prizeid FROM prijs p, regisseurprijsregel rpr WHERE p.prizeid = rpr.prizeid AND rpr.regisseurid = :pid";
                 cmd.CommandText = query;
                 cmd.Connection = connection;
 
@@ -454,7 +428,7 @@ namespace IMDb_Applicatie
 
             using (connection = new OracleConnection(connectionstring))
             {
-                query = "SELECT f.filmid, f.titel FROM film f, filmacteurregel fcr, acteur a WHERE f.filmid = fcr.filmid AND fcr.acteurid = :pid";
+                query = "SELECT f.filmid, f.titel FROM film f, filmacteurregel fcr WHERE f.filmid = fcr.filmid AND fcr.acteurid = :pid";
                 cmd.CommandText = query;
                 cmd.Connection = connection;
 
@@ -479,7 +453,7 @@ namespace IMDb_Applicatie
 
             using (connection = new OracleConnection(connectionstring))
             {
-                query = "SELECT p.titel, p.jaar, p.prizeid FROM acteur a, acteurprijsregel apr, prijs p WHERE p.prizeid = apr.prizeid AND apr.acteurid = :pid";
+                query = "SELECT p.titel, p.jaar, p.prizeid FROM acteurprijsregel apr, prijs p WHERE p.prizeid = apr.prizeid AND apr.acteurid = :pid";
                 cmd.CommandText = query;
                 cmd.Connection = connection;
 
