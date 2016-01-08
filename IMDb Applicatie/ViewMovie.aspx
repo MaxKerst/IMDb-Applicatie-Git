@@ -1,22 +1,10 @@
-﻿<%@ Page Title="Filmoverzicht" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MovieView.aspx.cs" Inherits="IMDb_Applicatie.MovieView" %>
+﻿<%@ Page Title="Filmoverzicht" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ViewMovie.aspx.cs" Inherits="IMDb_Applicatie.ViewMovie" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %></h2>
     <div class="form-horizontal">
         <hr />
         <div class="form-group">
-            <div class="col-md-8">
-                <div class="form-group">
-                    <div class="col-md-10">
-                        <asp:DropDownList ID="ddlMovies"
-                            AutoPostBack="True"
-                            CssClass="form-control"
-                            OnSelectedIndexChanged="ddlMovies_Selection_Change"
-                            runat="server">
-                        </asp:DropDownList>
-                    </div>
-                </div>
-            </div>
             <%--
                 Filmnaam
                 Beschrijving
@@ -61,33 +49,21 @@
                 <div class="col-md-10">
                     <asp:Label ID="lblCast" runat="server" Text="Cast:"></asp:Label>
                     <br />
-                    <asp:ListBox ID="lbCast" SelectionMode="Single" CssClass="form-control" ToolTip="De cast van de film." AutoPostBack="True" runat="server" OnSelectedIndexChanged="lbCast_SelectedIndexChanged">
-                    </asp:ListBox>
+                    <asp:ListBox ID="lbCast" SelectionMode="Single" CssClass="form-control" ToolTip="De cast van de film." AutoPostBack="True" OnSelectedIndexChanged="lbCast_OnSelectedIndexChanged" runat="server"></asp:ListBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-md-10">
                     <asp:Label ID="lblPrijzen" runat="server" Text="Prijzen:"></asp:Label>
                     <br />
-                    <asp:ListBox ID="lbPrizes" SelectionMode="Single" CssClass="form-control" ToolTip="De prijzen van de film." EnableViewState="False" runat="server">
-                    </asp:ListBox>
+                    <asp:ListBox ID="lbPrizes" SelectionMode="Single" CssClass="form-control" ToolTip="De prijzen van de film." EnableViewState="False" runat="server"></asp:ListBox>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-md-10">
                     <asp:Label ID="lblRecensies" runat="server" Text="Recensies:"></asp:Label>
                     <br />
-                    <asp:ListBox ID="lbRecensies" SelectionMode="Single" CssClass="form-control" ToolTip="De prijzen van de film." EnableViewState="False" runat="server">
-                    </asp:ListBox>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-md-10">
-                    <asp:TextBox ID="tbRecensie" runat="server" CssClass="form-control" Visible="False"></asp:TextBox>
-                    <br/>
-                    <asp:Button ID="btnPostRecensie" runat="server" Text="Recensie toevoegen" CssClass="form-control" Width="280px" OnClick="btnPostRecensie_OnClick" Visible="False" />
-                    <br/>
-                    <asp:Label ID="lblError" runat="server" Text="Het was helaas niet mogelijk de recensie toe te voegen, probeer opnieuw." Visible="False" CssClass="text-danger"></asp:Label>
+                    <asp:ListBox ID="lbRecensies" SelectionMode="Single" CssClass="form-control" ToolTip="De prijzen van de film." EnableViewState="False" runat="server"></asp:ListBox>
                 </div>
             </div>
         </div>

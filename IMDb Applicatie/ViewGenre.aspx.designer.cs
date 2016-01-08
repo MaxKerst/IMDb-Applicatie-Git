@@ -7,36 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IMDb_Applicatie.Account {
+namespace IMDb_Applicatie {
     
     
-    public partial class Manage {
+    public partial class ViewGenre {
         
         /// <summary>
-        /// successMessage control.
+        /// lblGenreMain control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder successMessage;
+        protected global::System.Web.UI.WebControls.Label lblGenreMain;
         
         /// <summary>
-        /// ChangePassword control.
+        /// lbGenreMain control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink ChangePassword;
-        
-        /// <summary>
-        /// CreatePassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink CreatePassword;
+        protected global::System.Web.UI.WebControls.ListBox lbGenreMain;
     }
 }

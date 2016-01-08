@@ -11,6 +11,10 @@ namespace IMDb_Applicatie
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Context.User.Identity.Name != "clanc")
+            {
+                Response.Redirect("~/");
+            }
             SetVisibility(false, false);
         }
 

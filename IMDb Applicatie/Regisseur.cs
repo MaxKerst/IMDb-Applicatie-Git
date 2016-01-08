@@ -12,19 +12,26 @@ namespace IMDb_Applicatie
         public string Woonplek;
         public List<Prijs> Prijzen;
         public List<Film> Films;
+        public int Id;
 
-        public Regisseur(string naam)
+        public Regisseur(int id)
+        {
+            Id = id;
+        }
+        public Regisseur(string naam, int id)
         {
             Naam = naam;
+            Id = id;
         }
 
-        public Regisseur(string naam, DateTime dob, string woonplek, List<Prijs> prijzen, List<Film> films)
+        public Regisseur(string naam, DateTime dob, string woonplek, List<Prijs> prijzen, List<Film> films, int id)
         {
             Naam = naam;
             Dob = dob;
             Woonplek = woonplek;
             Prijzen = prijzen;
             Films = films;
+            Id = id;
         }
     }
 }

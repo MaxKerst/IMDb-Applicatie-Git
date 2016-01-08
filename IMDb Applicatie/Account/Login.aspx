@@ -7,17 +7,12 @@
             <section id="loginForm">
                 <div class="form-horizontal">
                     <hr />
-                    <asp:PlaceHolder runat="server" ID="ErrorMessage" Visible="false">
-                        <p class="text-danger">
-                            <asp:Literal runat="server" ID="FailureText" />
-                        </p>
-                    </asp:PlaceHolder>
                     <div class="form-group">
-                        <asp:Label runat="server" AssociatedControlID="tbEmail" CssClass="col-md-2 control-label">Email</asp:Label>
+                        <asp:Label runat="server" AssociatedControlID="tbName" CssClass="col-md-2 control-label">Gebruikersnaam</asp:Label>
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="tbEmail" CssClass="form-control textbox" TextMode="SingleLine" />
-                            <asp:RequiredFieldValidator runat="server" ControlToValidate="tbEmail"
-                                CssClass="text-danger" ErrorMessage="Het email veld moet worden ingevuld." Display="Dynamic"/>
+                            <asp:TextBox runat="server" ID="tbName" CssClass="form-control textbox" TextMode="SingleLine" />
+                            <asp:RequiredFieldValidator runat="server" ControlToValidate="tbName"
+                                CssClass="text-danger" ErrorMessage="Het email veld moet worden ingevuld." Display="Dynamic" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -25,7 +20,8 @@
                         <div class="col-md-10">
                             <asp:TextBox runat="server" ID="tbPassword" TextMode="Password" CssClass="form-control textbox" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="tbPassword" CssClass="text-danger" ErrorMessage="Het wachtwoord
-                                 veld moet worden ingevuld." Display="Dynamic" />
+                                 veld moet worden ingevuld."
+                                Display="Dynamic" />
                         </div>
                     </div>
 
@@ -35,6 +31,7 @@
                         </div>
                     </div>
                 </div>
+                <asp:Label ID="ErrorTextBox" runat="server" Visible="false" CssClass="has-error has-feedback" ForeColor="red">Gebruikersnaam of wachtwoord is onjuist! Probeer opnieuw!</asp:Label>
                 <p>
                     <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Nog geen account? Klik hier om u te registreren</asp:HyperLink>
                 </p>

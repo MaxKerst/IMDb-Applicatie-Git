@@ -165,12 +165,14 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="ActeurView.aspx" />
     <Content Include="AdminPanel.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GenreView.aspx" />
     <Content Include="MovieView.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -178,6 +180,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="RegisseurView.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -211,6 +214,10 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="ViewActeur.aspx" />
+    <Content Include="ViewGenre.aspx" />
+    <Content Include="ViewMovie.aspx" />
+    <Content Include="ViewRegisseur.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -333,6 +340,13 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="Acteur.cs" />
+    <Compile Include="ActeurView.aspx.cs">
+      <DependentUpon>ActeurView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActeurView.aspx.designer.cs">
+      <DependentUpon>ActeurView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminPanel.aspx.cs">
       <DependentUpon>AdminPanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -368,9 +382,17 @@
     </Compile>
     <Compile Include="Film.cs" />
     <Compile Include="Gebruiker.cs" />
+    <Compile Include="GenreView.aspx.cs">
+      <DependentUpon>GenreView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenreView.aspx.designer.cs">
+      <DependentUpon>GenreView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IMDbSession.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="MovieView.aspx.cs">
       <DependentUpon>MovieView.aspx</DependentUpon>
@@ -385,6 +407,13 @@
     <Compile Include="Rating.cs" />
     <Compile Include="Recensie.cs" />
     <Compile Include="Regisseur.cs" />
+    <Compile Include="RegisseurView.aspx.cs">
+      <DependentUpon>RegisseurView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisseurView.aspx.designer.cs">
+      <DependentUpon>RegisseurView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -400,6 +429,34 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewActeur.aspx.cs">
+      <DependentUpon>ViewActeur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewActeur.aspx.designer.cs">
+      <DependentUpon>ViewActeur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGenre.aspx.cs">
+      <DependentUpon>ViewGenre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewGenre.aspx.designer.cs">
+      <DependentUpon>ViewGenre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMovie.aspx.cs">
+      <DependentUpon>ViewMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewMovie.aspx.designer.cs">
+      <DependentUpon>ViewMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRegisseur.aspx.cs">
+      <DependentUpon>ViewRegisseur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewRegisseur.aspx.designer.cs">
+      <DependentUpon>ViewRegisseur.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

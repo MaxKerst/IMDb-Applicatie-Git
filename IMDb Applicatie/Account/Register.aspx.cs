@@ -11,14 +11,16 @@ namespace IMDb_Applicatie.Account
             
         }
 
-        public void CreateUser_Click(object sender, EventArgs e)
-        {
-        }
-
-
         public void RegisterButton_Click(object sender, EventArgs e)
         {
-            
+            if(Portal.InsertUser(tbNaam.Text, tbPassword.Text))
+            {
+                Response.Redirect("Login");
+            }
+        else
+            {
+                lblError.Visible = true;
+            }
         }
     }
 }

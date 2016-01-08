@@ -25,26 +25,27 @@ namespace IMDb_Applicatie.Account
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (Portal.ValidateUser(tbEmail.Text, tbPassword.Text))
+            if (Portal.ValidateUser(tbName.Text, tbPassword.Text) != 0)
             {
                 //Context.User.Identity.GetUserName();
                 FormsAuthenticationTicket tkt;
                 string cookiestr;
                 HttpCookie ck;
-                tkt = new FormsAuthenticationTicket(1, tbEmail.Text, DateTime.Now,
-                    DateTime.Now.AddMinutes(30), true, tbEmail.Text);
+                tkt = new FormsAuthenticationTicket(1, tbName.Text, DateTime.Now,
+                    DateTime.Now.AddMinutes(30), true, tbName.Text);
                 cookiestr = FormsAuthentication.Encrypt(tkt);
                 ck = new HttpCookie(FormsAuthentication.FormsCookieName, cookiestr);
                 if (true)
                     ck.Expires = tkt.Expiration;
                 ck.Path = FormsAuthentication.FormsCookiePath;
                 Response.Cookies.Add(ck);
-
+                IMDbSession.UserID = (Portal.ValidateUser(tbName.Text, tbPassword.Text)).ToString();
                 Response.Redirect("~/", true);
             }
             else
             {
-                Response.Redirect("Login.aspx", true);
+                ErrorTextBox.Visible = true;
+                //Response.Redirect("Login.aspx", true);
             }
         }
     }
